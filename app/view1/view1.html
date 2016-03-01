@@ -1,0 +1,59 @@
+
+<div  class="weather_terms">
+
+
+<div class="" ><h1>How's My Weather?</h1></div>
+
+	<div id="location">
+	
+	<p>So we found where you were and here is the weather!</p>
+	</div>
+
+
+
+	<div id="nolocation">
+	
+	<div ><p>So It looks like we couldn't get your location. Please enter a zip code in the input field below to see your weather!</p></div>
+
+ 
+		<h2>Ok well tell us your zipcode!</h2>
+ 
+			<form name="formuser" class="zip-form" ng-submit="submit(user)">
+		
+				<input  min="1" type="number" class="zip_input" type="text" ng-model="user.zipcode"  />
+		
+				<button class="weather_btn" type="submit">Submit</button>
+			
+			</form>
+		
+		
+		<div  class="zip_message" ng-show="data1.show">
+	
+			<strong>Hey that's not a zipcode! Try another</strong>
+		
+		</div>
+
+		
+		
+		
+	</div>
+	
+   <ul class="weatherlist">
+  <!-- {{persons}}--><li><img src="http://openweathermap.org/img/w/{{wicon}}.png"/></li>
+   <li><h2> Temp : <span>{{temperature | kelvinToCelsius | number:1}} &deg;C</span></h2></li>
+		<li><h2> Latitude : <span>{{latitude}} </span></h2></li>
+		<li><h2>Longitude :  <span>{{longitude}}</span></h2></li>
+		<li><h2>Main Weather :  <span>{{weathermain}}</span></h2></li>
+		<li><h2>Weather Description :  <span>{{weatherdesc}}</span></h2></li>
+		<li><h2>Cloud Cover :  <span>{{cloudcover}}</span></h2></li>
+		<li><h2>Windspeed :  <span>{{windspeed}}</span></h2></li>
+	</ul>
+
+
+ 
+  
+</div>
+
+
+
+

@@ -1,0 +1,151 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+
+/*---------------------weatherForm------------------------------------*/
+
+
+body, html{font-family: 'Open Sans', sans-serif; 
+
+
+}
+html{background-image: url("http://www.thornell.com/wp-content/uploads/2012/07/blue-sky-2.jpg");
+background-size:cover;
+}
+
+
+.wrapper{width:100%; }
+
+h1{
+display: block;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+float: none;
+z-index: auto;
+width: auto;
+height: auto;
+position: static;
+cursor: default;
+opacity: 1;
+margin: 0;
+padding: 0;
+overflow: visible;
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+font: normal 4em/normal "Arvo", Helvetica, sans-serif;
+color: rgb(228, 243, 249);
+text-align: left;
+-o-text-overflow: clip;
+text-overflow: clip;
+background: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+text-shadow: -2px -2px 1px rgb(255,255,255) , -1px -1px 1px rgb(255,255,255) , 1px 1px 1px rgba(232,247,255,0.901961) , 1px 1px 0 rgb(42,101,139) , 2px 2px 0 rgb(41,99,138) , 3px 3px 0 rgb(40,97,136) , 4px 4px 0 rgb(39,95,133) , 5px 5px 0 rgb(38,93,131) , 6px 6px 0 rgb(37,90,128) , 7px 7px 0 rgb(36,87,125) , 8px 8px 0 rgb(35,84,121) , 9px 9px 0 rgb(33,80,117) , 10px 10px 0 rgb(31,76,113) , 11px 11px 0 rgb(30,72,108) , 12px 12px 1px rgba(28,67,103,0.498039) , 14px 14px 12px rgba(5,13,20,0.498039) ;
+-webkit-transition: all 201ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+-moz-transition: all 201ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+-o-transition: all 201ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+transition: all 201ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+-webkit-transform: none;
+transform: none;
+-webkit-transform-origin: 50% 50% 0;
+transform-origin: 50% 50% 0;
+
+
+}
+
+h2{font-weight:400;color:#4c678c;}
+
+h2 span{font-weight:700;}
+p{color:#4c678c;}
+
+.nozip{
+
+    background-color: #333;
+    border-radius: 3px;
+    padding: 50px 25px;
+
+}
+.nozip h2{color:#758AA8;}
+
+.zipmessage{color:#758AA8;}
+
+.weather_terms{    
+	
+    padding: 20px;
+    border-radius: 5px;
+	margin:20px 0px 20px 0px;
+	}
+	
+.weather_btn{    
+	color: #555;
+    border: 0px;
+    padding: 9px 25px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+	}
+	
+.zip_input{    
+	padding: 7px 10px;
+    border-radius: 4px;
+	}
+	
+	.zip_message{margin:20px 0px;}
+.zip_message strong{
+	
+	color:#758AA8;
+	
+	}
+
+.weatherlist{
+	text-decoration:none;
+		list-style:none;
+		padding:0px;
+		}
+.weatherlist li{     
+	padding: 9px 31px;
+	
+	}
+.weatherlist li:nth-child(even) {
+   background-color: rgba(76, 103, 140, 0.2);
+}
+.weatherlist li:nth-child(odd) {
+   
+}
+
+.copyright li{text-align: center;
+    color: #999;
+    font-size: 12px;
+}}
+
+
